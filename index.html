@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="医路云伴，面向六安青少年的健康科普与医学大师故事网站体验原型。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>医路云伴 · 青春健康六安</title>
+  <link rel="icon" href="prototype/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="prototype/style.css">
+  <link rel="stylesheet" href="prototype/boyi-layout.css">
+  <script type="module" src="prototype/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="医路云伴首页"><span class="institution-logos"><img alt="上海交通大学医学院与博医标识" src="media/brand/institutions.jpg" width="1179" height="2014"></span><span class="brand-name">医路云伴<small>博医计划 · 六安</small></span></a>
+      <nav class="nav header-nav" aria-label="主导航">
+        <a href="#home" data-nav="home">首页</a><a href="#health" data-nav="health">云上白大褂</a><a href="#stories" data-nav="stories">医学大师故事</a><a href="#teacher" data-nav="teacher">教师选材 <span id="bag-count" class="bag-count" hidden></span></a>
+      </nav>
+      <div class="header-actions"><span class="prototype-tag">体验原型</span><button type="button" class="icon-button search-toggle" aria-label="搜索内容"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button></div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"><div class="loading-state">正在打开医路云伴…</div></main>
+  <noscript><p class="noscript">请启用 JavaScript 体验动态微课与课堂互动。</p></noscript>
+  <footer class="site-footer"><div class="footer-identity"><span class="institution-logos"><img alt="上海交通大学医学院与博医标识" src="media/brand/institutions.jpg" width="1179" height="2014" loading="lazy"></span><div><strong>医路云伴</strong><p>博医计划 · 青春健康六安</p><p class="footer-note">网站体验原型 · 示范内容待审核 · 正式合作待确认</p></div></div><a href="#teacher">把内容带进课堂 ↗</a></footer>
+  <dialog id="search-dialog" class="search-dialog"><div class="dialog-head"><h2>找到你的下一个问题</h2><button class="icon-button close-search" aria-label="关闭搜索" type="button">×</button></div><label for="global-search">搜索健康主题、人物或关键词</label><input id="global-search" type="search" placeholder="试试“抗生素”或“林巧稚”" autocomplete="off"><div id="search-results" class="search-results" aria-live="polite"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
